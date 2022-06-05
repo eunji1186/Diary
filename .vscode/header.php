@@ -10,21 +10,11 @@ if (isset($_SESSION["username"]))
     $username = $_SESSION["username"];
 else
     $username = "";
-
-if (isset($_SESSION["userlevel"]))
-    $userlevel = $_SESSION["userlevel"];
-else
-    $userlevel = "";
-
-if (isset($_SESSION["userpoint"]))
-    $userpoint = $_SESSION["userpoint"];
-else
-    $userpoint = "";
 ?>
 
 <div id="top">
     <h3 style="background-color:ivory; color:orange; font-size:200%; text-align:center">
-        <a href="main.php">교환 일기</a>
+        <a href="main.php">이름 못정하겠는디~~</a>
     </h3>
     <ul id="top_menu">
         <?php
@@ -36,7 +26,7 @@ else
 
         <?php
         } else {
-            $logged = $username . "(" . $userid . ")님[Level:" . $userlevel . ", Point: " . $userpoint . "]";
+            $logged = $username . "(" . $userid . ")님";
         ?>
 
             <li><?= $logged ?></li>
@@ -48,23 +38,12 @@ else
         <?php
         }
         ?>
-
-        <?php
-        if ($userlevel == 1) {
-        ?>
-            <li> | </li>
-            <li><a href="admin.php">관리자 모드</a></li>
-        <?php
-        }
-        ?>
     </ul>
 </div>
 <div id="menu_bar">
     <ul>
         <li><a href="main.php">HOME</a></li>
-        <li><a href="message_form.php">쪽지 만들기</a></li>
         <li><a href="board_form.php">게시판 만들기</a></li>
-        <li><a href="main.php">사이트 완성하기</a></li>
     </ul>
 </div>
 
