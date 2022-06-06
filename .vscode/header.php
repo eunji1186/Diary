@@ -13,7 +13,7 @@ else
 ?>
 
 <div id="top">
-    <h3 style="background-color:ivory; color:orange; font-size:200%; text-align:center">
+    <h3>
         <a href="main.php">이름 못정하겠는디~~</a>
     </h3>
     <ul id="top_menu">
