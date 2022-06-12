@@ -6,11 +6,35 @@
 </head>
 
 <body>
-    <!--젤 처음 화면이 떴을 때 보여줄 화면 구성
-        예를 들면 최근 게시글, 베스트 게시글 등등
-    -->
-    <?php echo "main"; ?>
+    <section>
+        <h4>
+            <p>
+                <?php
+                $today = date("Y년 m월 d일");
+                echo $today;
+                ?>
+            </p>
+        </h4>
 
+        <?php
+        echo "달력";
+        ?>
+    </section>
+
+    <section>
+        <h4>
+            <p>
+                <?php
+                echo "오늘의 베스트";
+                ?>
+            </p>
+        </h4>
+
+        <?php
+        echo "게시글1<br>";
+        echo "게시글2<br>";
+        ?>
+    </section>
 </body>
 
 </html>

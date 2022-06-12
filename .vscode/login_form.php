@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>교환 일기</title>
+    <title>너 나들이</title>
 </head>
 
 <body>
